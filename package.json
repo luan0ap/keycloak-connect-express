@@ -1,0 +1,31 @@
+{
+  "name": "keycloak-connect-express",
+  "version": "0.0.0",
+  "description": "",
+  "main": "bin/www.js",
+  "private": true,
+  "scripts": {
+    "lint": "standard | snazzy",
+    "lint:fix": "standard --fix",
+    "dev": "NODE_PATH=. nodemon ./bin/www.js --exec 'npm run lint && node'",
+    "start": "NODE_PATH=. node ./bin/www.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "helmet": "^4.1.1",
+    "http-errors": "~1.6.3",
+    "keycloak-connect": "^11.0.2",
+    "mysql2": "^2.1.0",
+    "pino": "^6.6.1",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "snazzy": "^8.0.0",
+    "standard": "^14.3.4"
+  }
+}
